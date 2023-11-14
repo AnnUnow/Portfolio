@@ -6,25 +6,36 @@
     <title>Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
 </head> 
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
 <body>
 	<header>
-		<h1>Danika Lieu</h1>
-			<figure>
-				<img src="Assets/Logo.png" alt="My Portfolio Logo">				
-				<figcaption>Logo</figcaption>			
-			</figure>						
-		<aside>
-		<h4>Portfolio id</h4>
-		</aside>
-			<nav>
-				<ul>
-					<li><a href="#bio">About me</a></li>
-					<li><a href="#hobbies">Hobbies</a></li>
-					<li><a href="#contacts">contacts</a></li>
-					<li><a href="#goals">goals</a></li>
-					<li><a href="#Portfolio">My Project</a></li>
-				</ul>	
-			</nav>
+			<div class="banner">
+				<div class="navbar">
+					<figure>
+						<img src="Assets/Logo.png" alt="My Portfolio Logo" class="Logo">
+					</figure>
+						<ul>
+							<li><a href="#bio">About me</a></li>
+							<li><a href="#hobbies">Hobbies</a></li>
+							<li><a href="#contacts">contacts</a></li>
+							<li><a href="#goals">goals</a></li>
+							<li><a href="#Portfolio">My Project</a></li>
+						</ul>	
+				</div>
+			</div>
+			<div class="content">
+				<h1>Danika Lieu</h1>		
+				<aside>
+				<h4>Portfolio id</h4>
+				</aside>
+				<div>
+					<button type="button"><span></span>Click Me</button>
+				</div>
+			</div>
 	</header>	
 	<main>	
 		<section id="#bio">
@@ -55,7 +66,7 @@
 		<section id="#Portfolio">
             <h2>Portfolio Collection</h2>
             
-            <table>
+            <table
                 <thead>
                     <tr>
                         <th>projects</th>
