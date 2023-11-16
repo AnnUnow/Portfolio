@@ -5,12 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head> 
-<style>
-    table, th, td {
-      border:1px solid black;
-    }
-    </style>
+
 <body>
 	<header>
 			<div class="banner">
@@ -39,13 +36,14 @@
 			</div>
 	</header>	
 	<main>	
-		<section id="#bio">
-			<h2>About me</h2>
-			<p>Hello, welcome to my portfolio I'm currently taking the UI (user interface) program here at Sait. I also have some expierence with coding, such as using Javascrit, and html. Looking forward, my goal is to leverage my college education and newfound skills to create impactful digital experiences that resonate with users. I am excited about the prospect of contributing my unique perspective to the field of UX design and am eager to embark on internships and real-world projects that will further shape my expertise. I'm thrilled to be here!</p>
-				<figure>
-					<img src="Assets/This-is-Me.jpeg" alt="My profile Picture" width="500" height="600">				
-					<figcaption>Danika Lieu</figcaption>				
-				</figure>	
+		<section class="bio">
+			<div class="main">
+				<img src="Assets/This-is-Me.jpeg" alt="My profile Picture">				
+				<div>
+					<h2>About Me</h2>
+					<h5>UX design</h5>
+					<p>Hello, welcome to my portfolio I'm currently taking the UI (user interface) program here at Sait. I also have some expierence with coding, such as using Javascrit, and html. Looking forward, my goal is to leverage my college education and newfound skills to create impactful digital experiences that resonate with users. I am excited about the prospect of contributing my unique perspective to the field of UX design and am eager to embark on internships and real-world projects that will further shape my expertise. I'm thrilled to be here!</p>
+				</div>
 		</section>		
 		<section id="#hobbies">
 			<h2>hobbies</h2>
@@ -64,37 +62,56 @@
 			To gain a comprehensive understanding of UX design principles, methodologies, and tools through my college coursework. By the end of the semester, I aim to successfully conceptualize, design, and prototype a user-centered digital product. I plan to achieve this by seeking feedback from both peers and instructors. Additionally, I will dedicate time outside of class to self-study, explore real-world UX case studies, and practice using industry-standard design software. My ultimate objective is to develop a strong foundation in UX design, enabling me to create intuitive, user-friendly digital experiences and pursue meaningful internships or entry-level positions in the field."
 		</section>
 		
-		<section id="#Portfolio">
-            <h2>Portfolio Collection</h2>
+		<div id="Portfolio">
+			<div class="container">
+				<div class="row">
+					<div class="about-col-1">
+					</div>
+					<div class="about-col-2">
+						<h2 class="sub-title">Portfolio Collection</h2>
+						<p>welcome to my portfolio Collection</p>
+
+						<div class="tab-titles">
+							<p class="tab-links active-links" onclick="opentab('Hard-Cover')">Book-Cover</p>
+							<p class="tab-links" onclick="opentab('E-Book')">E-Book</p>
+							<p class="tab-links" onclick="opentab('Poster')">Poster</p>
+						</div>
+						<div class="tab-contents initial-tab active-tab" id="Hard-Cover">
+							<img class="Cover" src="Assets/Book_Cover.png" alt="Hard book cover">
+						</div>	
+						<div class="tab-contents initial-tab" id="E-Book" hidden>
+							<img src="Assets/E_book.png" alt="E-Book">
+
+						</div>
+						<div class="tab-contents initial-tab" id="Poster" hidden>
+							<img src="Assets/Poster_Design.png" alt="Poster">
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+
+			var tablinks = document.getElementsByClassName("tab-links");
+			var tabcontents = document.getElementsByClassName("tab-contents");
+			function opentab(tabname){
+				for(tablink of tablinks){
+					tablink.classList.remove("active-link");
+				}
+				for(tabcontent of tabcontents){
+					tabcontent.classList.remove("active-tab");
+					tabcontent.classList.add("initial-tab");
+					tabcontent.setAttribute("hidden", true);
+				}
+			var selectedTab = document.getElementById(tabname);
+   			selectedTab.classList.add("active-tab");
+    		selectedTab.removeAttribute("hidden");				
+				event.currentTarget.classList.add("active-link");
+			}
+		</script>
             
-            <table
-                <thead>
-                    <tr>
-                        <th>projects</th>
-                        <th>Description</th>  
-						<th>Images</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>E-Book</td>
-                        <td>How my book cover would look on a digital device</td>
-						<td><img src="Assets/E_book.png" alt="E-Book"></td>
-                    </tr>
-                    <tr>
-                        <td>Poster</td>
-                        <td>A design of my promotional poster for my book cover.</td>   
-						<td><img src="Assets/Poster_Design.png" alt="Poster"></td>
-                    </tr>
-                    <tr>
-                        <td>book cover</td>
-                        <td>Book cover design.</td>
-						<td><img src="Assets/Book_Cover.png" alt="Hard book cover"></td>
-                    </tr>
-                </tbody>
-				
-            </table>
-        </section>
    </main>						
 		<div id="Services">
 			<div class="container">
@@ -113,13 +130,31 @@
 				</div>
 			</div>
 		</div>			
-		</section>
-		<section id="#contacts">
-			<li><a href="https://www.linkedin.com/in/danika-lieu-00b717293/">linkedin</a></li>
-			<li><a href="https://github.com/AnnUnow">github</a></li>
-		</section>	
+		<div id="contacts">
+			<div class="container">
+				<div class="row">
+					<div class="contact-left">
+						<h1 class="sub-title">Contact Me</h1>
+						<p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+						<div class="social-icons">
+							<a href="https://github.com/AnnUnow/"><i class="fab fa-github"></i></a>
+							<a href="https://www.linkedin.com/in/danika-lieu-00b717293/"><i class="fab fa-linkedin"></i></a>
+						</div>
+					</div>
+					<div class="contact-right">
+						<form>
+							<input type="text" name="Name" placeholder="Your Name" required>
+							<input type="email" name="email" placeholder="Your email" required>
+							<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+							<button type="button"><span></span>Click Me</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>&copy; 2023 Danika Lieu. All rights reserved.</p>
+		</div>
 	<footer>
-		<p>&copy; 2023 Danika Lieu. All rights reserved.</p>
-	</footer>
 </body>
 </html>
