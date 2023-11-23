@@ -29,6 +29,7 @@ body{
   display: inline-block;
   margin: 0 20px;
   position: relative;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navbar ul li a{
@@ -140,6 +141,11 @@ h1{
 .about-col-1{
   flex-basis: 35%;
   
+}
+
+.about-col-1 img{
+  width: 100%;
+  border-radius: 15px;
 }
 
 .about-col-2{
@@ -298,6 +304,7 @@ form input, form textarea{
   font-size: 75px;
   text-transform: capitalize;
   margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .about-text h5 {
@@ -314,6 +321,7 @@ form input, form textarea{
   line-height: 28px;
   font-size: 18px;
   margin-bottom:  45px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .Content-table {
@@ -324,6 +332,7 @@ form input, form textarea{
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .Content-table thead tr {
@@ -357,4 +366,13 @@ form input, form textarea{
 
 .Content-table tbody tr.active-row-2 {
   color:#ababab
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    background-color: #382e2e;
+  }
+}
+
+@media only screen and (max-width: 600px) {
 }
