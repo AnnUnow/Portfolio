@@ -1,6 +1,9 @@
 body{
   background-color: #382e2e;
 }
+
+/* Homepage */
+
 .banner{
   width: 100%;
   height: 100vh;
@@ -210,7 +213,7 @@ h1{
 }
 
 .tab-contents {
-  padding: 10px; /* Adjust the padding as needed */
+  padding: 10px;
   box-sizing: border-box;
 }
 
@@ -265,6 +268,8 @@ form input, form textarea{
   border-radius: 6px;
 }
 
+/* Footer */
+
 .copyright{
   width: 100%;
   text-align: center;
@@ -273,6 +278,8 @@ form input, form textarea{
   font-weight: 300;
   margin-top: 20px;
 }
+
+/* About Me section */
 
 .bio{
   width: 100%;
@@ -304,7 +311,7 @@ form input, form textarea{
   font-size: 75px;
   text-transform: capitalize;
   margin-bottom: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .about-text h5 {
@@ -324,7 +331,51 @@ form input, form textarea{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Goals section */
 
+#goals {
+  background-color: #262626; 
+  padding: 40px; 
+  text-align: center; 
+}
+
+#goals h2 {
+  color: #009688; 
+  font-size: 42px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#goals p {
+  font-size: 18px;
+  line-height: 1.6; 
+  margin-top: 20px; 
+  color:#ababab;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hobbies section */
+
+#hobbies {
+  background-color: #423535; 
+  padding: 40px; 
+  text-align: center; 
+}
+
+#hobbies h2 {
+  color: #009688; 
+  font-size: 42px;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+#hobbies p {
+  font-size: 18px;
+  line-height: 1.6; 
+  margin-top: 20px; 
+  color:#ababab;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Classes section */
 
 .Content-table {
   border-collapse: collapse;
@@ -377,4 +428,20 @@ form input, form textarea{
 }
 
 @media only screen and (max-width: 600px) {
+}
+
+@media screen and (min-width: 600px) {
+  #goals {
+    padding: 40px;
+    width: 100%;
+    height:100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #hobbies {
+    padding: 40px;
+    width: 100%;
+    height:100%;
+  }
 }
