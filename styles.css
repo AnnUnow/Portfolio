@@ -1,6 +1,9 @@
 body{
   background-color: #382e2e;
 }
+
+/* Homepage */
+
 .banner{
   width: 100%;
   height: 100vh;
@@ -139,19 +142,21 @@ h1{
 
 .about-col-1{
   flex-basis: 35%;
-  
+}
+
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
 }
 
 .about-col-2{
   flex-basis: 60%;
-
 }
 
 .sub-title{
   font-size: 60px;
   font-weight: 600;
   color: #fff;
-
 }
 
 .tab-titles{
@@ -204,7 +209,7 @@ h1{
 }
 
 .tab-contents {
-  padding: 10px; /* Adjust the padding as needed */
+  padding: 10px;
   box-sizing: border-box;
 }
 
@@ -259,6 +264,8 @@ form input, form textarea{
   border-radius: 6px;
 }
 
+/* Footer */
+
 .copyright{
   width: 100%;
   text-align: center;
@@ -267,6 +274,8 @@ form input, form textarea{
   font-weight: 300;
   margin-top: 20px;
 }
+
+/* About Me */
 
 .bio{
   width: 100%;
@@ -316,6 +325,42 @@ form input, form textarea{
   margin-bottom:  45px;
 }
 
+/* Hobbies */
+
+#hobbies {
+  padding: 20px; 
+}
+
+#hobbies h2 {
+  color:#ababab; 
+  font-size: 42px; 
+}
+
+#hobbies p {
+  color:#ababab; 
+  font-size: 18px; 
+  line-height: 1.5; 
+}
+
+/* Goals Section */
+
+#goals {
+  Padding: 20px;
+}
+
+#goals h2 {
+  color: #ababab;
+  font-size: 42px;
+}
+
+#goals p {
+  color: #ababab;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Schedule Section */
+
 .Content-table {
   border-collapse: collapse;
   margin: 25px 0;
@@ -357,4 +402,10 @@ form input, form textarea{
 
 .Content-table tbody tr.active-row-2 {
   color:#ababab
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: #382e2e;
+  }
 }
