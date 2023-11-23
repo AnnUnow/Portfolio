@@ -114,22 +114,6 @@ button:hover{
   padding: 30px;
 }
 
-.services-list{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-}
-
-.services-list div{
-  background: #262626;
-  padding: 40px;
-  font-size: 13px;
-  font-weight: 300;
-  border-right: 10px;
-
-}
-
 h2 {
   color: #fff;
 }
@@ -153,7 +137,6 @@ h1{
   justify-content: space-between;
 }
 
-.
 .about-col-1{
   flex-basis: 35%;
   
@@ -204,7 +187,6 @@ h1{
   margin: auto;
   width: 75%;
   height: auto;
-  border: 2px solid #3498db;
   border-radius: 10px;
   max-width: 100%;
   max-height: 100%;
@@ -296,4 +278,83 @@ form input, form textarea{
 .bio img{
   height: auto;
   width: 430px;
+}
+
+.about-text {
+  width: 550px;
+}
+
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text h2 {
+  color: #ababab;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.about-text h5 {
+  color: #ababab;
+  letter-spacing: 2px;
+  font-size: 22px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+.about-text p {
+  color: #ababab;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom:  45px;
+}
+
+.Content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.Content-table thead tr {
+  background-color:#009688;
+  color: #022e2a;
+  text-align: left;
+  font-weight: bold;
+}
+
+.Content-table td{
+  padding: 12px 15px;
+}
+
+.Content-table tbody tr {
+  border-bottom: 1px solid #ababab;
+}
+
+.Content-table tbody tr:nth-of-type(even) {
+  background-color: #423535;
+}
+
+.Content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009688;
+  color: #ababab;
+}
+
+.Content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009688;
+}
+
+.Content-table tbody tr.active-row-2 {
+  color:#ababab
 }
