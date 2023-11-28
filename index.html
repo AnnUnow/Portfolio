@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
+	<script defer src="JavaScript.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head> 
 <body>
@@ -30,7 +31,7 @@
 				<h4>Portfolio id</h4>
 				</aside>
 				<div>
-					<button type="button"><span></span>Welcome</button>
+					<button id="btn-alert"><span></span>welcome</button>
 				</div>
 			</div>
 	</header>	
@@ -79,24 +80,6 @@
 				</div>
 			</div>
 		</div>
-		<script>
-			var tablinks = document.getElementsByClassName("tab-links");
-			var tabcontents = document.getElementsByClassName("tab-contents");
-			function opentab(tabname){
-				for(tablink of tablinks){
-					tablink.classList.remove("active-link");
-				}
-				for(tabcontent of tabcontents){
-					tabcontent.classList.remove("active-tab");
-					tabcontent.classList.add("initial-tab");
-					tabcontent.setAttribute("hidden", true);
-				}
-			var selectedTab = document.getElementById(tabname);
-   			selectedTab.classList.add("active-tab");
-    		selectedTab.removeAttribute("hidden");				
-				event.currentTarget.classList.add("active-link");
-			}
-		</script>           
    </main>						
 		<div id="Services">
 			<div class="container">
@@ -153,9 +136,11 @@
 				</div>
 			</div>
 		</div>
+	<footer>
+		<p id="demo"></p>
 		<div class="copyright">
 			<p>&copy; 2023 Danika Lieu. All rights reserved.</p>
 		</div>
-	<footer>
+	</footer>
 </body>
 </html>

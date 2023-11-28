@@ -106,6 +106,19 @@ span{
   transition: 0.5s;
 }
 
+#btn-alert {
+  background: #009688;
+  color: white; /* Set the text color */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#btn-alert:hover {
+  background: #00796b; /* Change the background color on hover */
+}
+
 button:hover span{
   width: 100%;
 }
@@ -271,12 +284,12 @@ form input, form textarea{
 /* Footer */
 
 .copyright{
-  width: 100%;
+ ; width: 100%;
   text-align: center;
   padding: 25px 0;
   background: #262626;
   font-weight: 300;
-  margin-top: 20px;
+  margin-top: 20px
 }
 
 /* About Me section */
