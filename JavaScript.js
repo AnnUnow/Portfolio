@@ -59,5 +59,18 @@ count = count + 1;
      };
 });
 
+{
+const numbersList = document.getElementById('numbers');
 
+
+for (let i = 1; i <= 100; i++) {
+ 
+  const listItem = document.createElement('li');
+
+  
+  listItem.textContent = i % 2 === 0 ? 'even' : 'odd';
+
+  
+  numbersList.appendChild(listItem);
+}}
 
