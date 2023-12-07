@@ -32,4 +32,32 @@ document.getElementById('btn-alert').onmouseleave = () => {
     btnAlert.style.backgroundColor = '';  
     btnAlert.style.color = '';  
 };
+let count = 1;
+ 
+const buttonfeed = document.getElementById('btn-counter');
+const counterText = document.getElementById('txt-counter');
+ 
+ 
+const numbersList = document.getElementById('numbers');
+const counterButton = document.getElementById('btn-counter');
+const numbersButton = document.getElementById('btn-counter');
+ 
+buttonfeed.addEventListener('click', function() {
+   
+count = count + 1;
+ 
+    counterText.innerHTML = '' + count + '';
+ 
+    if (count % 2 === 0) {
+        console.log('Even')
+         counterText.classList.remove('odd');
+         counterText.classList.add('even');
+     } else {
+         console.log('Odd')
+         counterText.classList.remove('even');
+         counterText.classList.add('odd');
+     };
+});
+
+
 
